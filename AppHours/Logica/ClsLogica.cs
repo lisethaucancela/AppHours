@@ -24,12 +24,12 @@ namespace AppHours.Logica
                 {
                     var num_horas = (lsHora.hasta - lsHora.desde).Hours;
                     
-                    if (DiaLogica.isWeek(lsHora.dia))
+                    if (week.isWeek(lsHora.dia))
                     {
                         TotalValor += week.CalculoValor(lsHora.desde, lsHora.hasta) * num_horas;
                     }
 
-                    if (DiaLogica.isWeekend(lsHora.dia))
+                    if (weekend.isWeekend(lsHora.dia))
                     {
                         TotalValor += weekend.CalculoValor(lsHora.desde, lsHora.hasta) * num_horas;
 

@@ -8,12 +8,19 @@ namespace AppHours.Model
 {
     public class WeekModel : Week
     {
+        private string[] week = { "MO", "TU", "WE", "TH", "FR" };
+
         public WeekModel()
         {
             lstRangos = new List<DatosModel>();
             lstRangos.Add(new DatosModel(TimeSpan.Parse("00:01"), TimeSpan.Parse("09:00"), 25));
             lstRangos.Add(new DatosModel(TimeSpan.Parse("09:01"), TimeSpan.Parse("18:00"), 15));
             lstRangos.Add(new DatosModel(TimeSpan.Parse("18:01"), TimeSpan.Parse("23:59"), 25));
+        }
+
+        public  bool isWeek(string dia)
+        {
+            return week.ToList().Contains(dia);
         }
     }
 }

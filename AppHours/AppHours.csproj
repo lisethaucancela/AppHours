@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logica\DiaLogica.cs" />
     <Compile Include="Interfaz\ILectura.cs" />
     <Compile Include="Logica\ClsLogica.cs" />
     <Compile Include="Model\DatosModel.cs" />
