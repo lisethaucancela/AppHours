@@ -10,7 +10,7 @@ namespace AppHours.Model
     {
         public List<DatosModel> lstRangos;
 
-        public int CalculoTotal(TimeSpan desde, TimeSpan hasta)
+        public int CalculoValor(TimeSpan desde, TimeSpan hasta)
         { 
             foreach (var rangos in lstRangos)
             {

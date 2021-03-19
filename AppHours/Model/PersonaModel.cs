@@ -11,12 +11,12 @@ namespace AppHours.Model
         public string strNombre { get; set; }
         public List<DatosModel> lstDatos { get; set; }
 
-        public int intHoras { get; set; }
+        public int intValorTotal { get; set; }
 
         public PersonaModel()
         {
             lstDatos = new List<DatosModel>();
-            intHoras = 0;
+            intValorTotal = 0;
             strNombre = "";
         }
 

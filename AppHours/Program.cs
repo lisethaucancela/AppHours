@@ -30,7 +30,7 @@ namespace AppHours
 
             foreach (var lsE in listaEmpleados)
             {
-                Console.WriteLine("The amount to pay " + lsE.strNombre + " is: " + lsE.intHoras + " USD");
+                Console.WriteLine("The amount to pay " + lsE.strNombre + " is: " + lsE.intValorTotal + " USD");
             }
 
             Console.ReadKey();
